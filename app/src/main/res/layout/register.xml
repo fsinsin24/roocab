@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registerpage"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:layout_width="248dp"
+        android:layout_height="74dp"
+        android:gravity="center"
+        android:text="Create New Account"
+        android:textAlignment="center"
+        android:textColor="#2B3381"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.177" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already registered? Log in here."
+        android:textColor="#2B3381"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="193dp" />
+
+
+    <LinearLayout
+        android:layout_width="339dp"
+        android:layout_height="459dp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="228dp"
+        android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="304dp"
+        android:layout_height="25dp"
+        android:padding="5dp"
+        android:text="FIRST NAME"
+        android:textColor="#2B3381"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="228dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/graybox"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            app:boxBackgroundMode="outline"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="259dp" />
+
+    <TextView
+        android:layout_width="304dp"
+        android:layout_height="25dp"
+        android:padding="5dp"
+        android:text="LAST NAME"
+        android:textColor="#2B3381"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/graybox"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            app:boxBackgroundMode="outline"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="337dp" />
+
+    <TextView
+        android:layout_width="304dp"
+        android:layout_height="25dp"
+        android:padding="5dp"
+        android:text="EMAIL ADDRESS"
+        android:textColor="#2B3381"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="385dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/graybox"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            app:boxBackgroundMode="outline"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="416dp" />
+
+    <TextView
+        android:layout_width="304dp"
+        android:layout_height="25dp"
+        android:padding="5dp"
+        android:text="CONTACT NUMBER"
+        android:textColor="#2B3381"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="463dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/graybox"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            app:boxBackgroundMode="outline"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="495dp" />
+
+    <TextView
+        android:layout_width="304dp"
+        android:layout_height="25dp"
+        android:padding="5dp"
+        android:text="OCCUPATION"
+        android:textColor="#2B3381" />
+
+        <Spinner
+            android:id="@+id/occupation"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/graybox"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            app:boxBackgroundMode="outline"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="495dp"
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/resident"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESIDENT"
+                android:layout_marginRight="70dp"/>
+
+            <RadioButton
+                android:id="@+id/nonresident"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NON-RESIDENT" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="333dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#2B3381"
+            android:gravity="center"
+            android:text="CONTINUE"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:background="@drawable/rectanglebtn"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="630dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
