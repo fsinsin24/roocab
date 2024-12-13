@@ -29,23 +29,20 @@
             android:contentDescription="Menu" />
 
         <ImageView
-            android:id="@+id/app_logo"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:layout_marginEnd="100dp"
+            android:layout_marginEnd="110dp"
             android:padding="8dp"
             android:src="@drawable/bacoor"
             android:contentDescription="App Logo" />
 
         <ImageView
-            android:id="@+id/notification_icon"
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:layout_marginTop="8dp"
             android:padding="8dp"
             android:src="@drawable/notification"
             android:contentDescription="Notifications" />
-
 
     </LinearLayout>
 
